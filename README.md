@@ -1,5 +1,6 @@
 # Water simulation
-This is another webgl project I made, in which I explore some basic particle-based water simulation.
+This is another webgl project I made, in which I explore some basic particle-based water simulation. To run it, simply clone the repository and open the run.html file in your browser.
+
 <img width="1920" height="950" alt="image" src="https://github.com/user-attachments/assets/b9ba4612-413e-4c15-bd28-ab1a4997df86" />
 
 ## Features

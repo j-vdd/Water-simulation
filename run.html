@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<style>
+			canvas {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				z-index: 0;
+			}
+
+			#fpsCounter {
+				position: fixed;
+				z-index: 1;
+				font-size: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id = "canvas"></canvas>
+		<div id = "fpsCounter">fps</div>
+		
+		<script src = "water.js"></script>
+		<script src = "render.js"></script>
+		<script src = "player.js"></script>
+		<script src = "terrain.js"></script>
+		<script src = "noise.js"></script>
+		<script src = "math2.js"></script>
+		<script src = "mesh.js"></script>
+		<script src = "tree.js"></script>
+		<script src = "chunk.js"></script>
+
+		<!--shaders-->
+		<script src = "shaders/shaders.js"></script>
+		<script src = "shaders/terrainShader.js"></script>
+		<script src = "shaders/waterShader.js"></script>
+		<script src = "shaders/waterSimShader.js"></script>
+
+		<!--main loop-->
+		<script src = "webgl.js"></script>
+	</body>
+</html>

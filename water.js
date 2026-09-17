@@ -35,7 +35,7 @@ class Water {
         this.force = [];
         this.size = [];
         this.color = [];
-        this.repulsionRadius = 1;
+        this.repulsionRadius = 0.5;
         this.nParticles = 0;
     }
 
@@ -118,8 +118,10 @@ class Water {
     update(terrain) {
         //this.calculateForces();
         this.addParticle(this.source[0] + Math.random()*2, this.source[1], this.source[2] + Math.random()*2);
+        this.addParticle(this.source[0] + Math.random()*2, this.source[1], this.source[2] + Math.random()*2);
+        this.addParticle(this.source[0] + Math.random()*2, this.source[1], this.source[2] + Math.random()*2);
         //this.addParticle(this.source[0] + Math.random()/2, this.source[1], this.source[2] + Math.random()/2);
-        if(this.nParticles > this.maxParticles) {
+        while (this.nParticles > this.maxParticles) {
            //this.deleteParticle(Math.floor(Math.random()*this.nParticles)*3);
            this.deleteParticle(Math.floor(Math.random()*this.nParticles));
         }

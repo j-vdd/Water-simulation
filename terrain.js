@@ -64,7 +64,7 @@ class Terrain {
 				}
 			}
 		}
-		this.water = new Water(this.values, this.width, this.height, this.depth, 2000);
+		this.water = new Water(this.values, this.width, this.height, this.depth, 5000);
 	}
 	
 	getColor(height, steepness) {

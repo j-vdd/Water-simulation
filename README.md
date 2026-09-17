@@ -3,7 +3,7 @@ This is another webgl project I made, in which I explore some basic particle-bas
 <img width="1920" height="950" alt="image" src="https://github.com/user-attachments/assets/b9ba4612-413e-4c15-bd28-ab1a4997df86" />
 
 ## Features
-- Simulated particle-based water
+- Simulated particle-based water using Verlet integration
 - Marching cubes
 - Random terrain generation (heightmap, tree sampling)
 

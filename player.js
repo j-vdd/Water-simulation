@@ -16,12 +16,12 @@ class Player {
         const dx = cx*forward[0] + cz*sideways[0];
         const dz = cx*forward[1] + cz*sideways[1];
 
-        const newHeight = terrain.castRay([this.x + dx, this.y + 0.1, this.z + dz], [0, -0.01, 0], 200);
-        if(newHeight != 0) {
-		    this.x += dx;
+        const newHeight = terrain.castRay([this.x + dx, this.y + 0.1, this.z + dz], [0, -0.01, 0], 500);
+        if(newHeight < 100 && newHeight > 0) {
 		    this.y = this.y - newHeight*0.01 + 0.5 + 0.1;
-		    this.z += dz;
         }
+        this.z += dz;
+        this.x += dx;
 	}
 
     setPerspectiveMatrix(fov, aspect, near, far) {
@@ -70,7 +70,7 @@ class Player {
 			this.y -= 0.3;
 		}
         if(keysPressed.indexOf("e") != -1) {
-			this.y += 1.4;
+			this.y += 0.3;
 		}
 
 		if(keysPressed.indexOf("t") != -1) {
@@ -80,7 +80,7 @@ class Player {
 }
 
 let keysPressed = [];
-document.onkeypress = function(e) {
+document.onkeydown = function(e) {
 	if(keysPressed.indexOf(e.key) != -1) {
 		return;
 	}

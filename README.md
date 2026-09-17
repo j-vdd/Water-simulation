@@ -6,8 +6,10 @@ This is another webgl project I made, in which I explore some basic particle-bas
 - Simulated particle-based water using Verlet integration
 - Marching cubes
 - Random terrain generation (heightmap, tree sampling)
+- Ray casting for player collision detection with terrain
 
 ## Controls
 - [WASD] for moving forward/backward/to the side
 - [Q]/[E] for moving down/up
 - [IJKL] for turning the camera
+- [T] for changing the water spawnpoint to the current player position
